@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.zss.superShop</groupId>
+		<artifactId>user-server</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<packaging>jar</packaging>	
+	<artifactId>user-persistence</artifactId>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<user-server.version>1.0.0-SNAPSHOT</user-server.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.zss.superShop</groupId>
+			<artifactId>user-common</artifactId>
+			<version>${user-server.version}</version>
+		</dependency>
+	</dependencies>
+</project>
