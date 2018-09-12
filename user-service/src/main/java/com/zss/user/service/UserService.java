@@ -2,6 +2,7 @@ package com.zss.user.service;
 
 import com.zss.user.domain.UserInfo;
 import com.zss.user.entity.BaseResEntity;
+import com.zss.user.req.UserReq;
 
 /**
  * 用户服务层
@@ -14,5 +15,5 @@ public interface UserService {
 	
 	public BaseResEntity queryUser(Long id);
 	
-	public BaseResEntity queryByCondition(UserInfo user);
+	public BaseResEntity queryByCondition(UserReq userreq);
 }

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.zss.user.domain.UserInfo;
 import com.zss.user.entity.BaseResEntity;
 import com.zss.user.entity.ResponseEntity;
+import com.zss.user.req.UserReq;
 import com.zss.user.service.UserService;
 
 /**
@@ -43,6 +44,20 @@ public class UserController {
         try{
         	//log.info(">>>>>>{}",commonConfig.getInstanceId());
         	BaseResEntity result =userService.addUser(user);
+        	return result;
+        }catch(Exception e){
+            log.error("发生异常:",e);
+            return BaseResEntity.failure();
+        }
+    }
+	
+	@ApiOperation(value = "根据条件查用户", httpMethod = "POST", produces = "application/json")
+	@ApiResponse(code = 200, message = "success", response = ResponseEntity.class)
+    @RequestMapping(value = "/queryByCondition", method = RequestMethod.POST)
+	@ResponseBody
+    public BaseResEntity queryByCondition(@RequestBody UserReq userreq){
+        try{
+        	BaseResEntity result =userService.queryByCondition(userreq);
         	return result;
         }catch(Exception e){
             log.error("发生异常:",e);

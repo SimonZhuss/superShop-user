@@ -2,9 +2,8 @@ package com.zss.user.mapper;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Mapper;
-
 import com.zss.user.domain.UserInfo;
+import com.zss.user.req.UserReq;
 
 public interface UserMapper {
 	
@@ -12,5 +11,5 @@ public interface UserMapper {
 
     UserInfo selectByPrimaryKey(Long id);
     
-    List<UserInfo> queryByCondition(UserInfo user);
+    List<UserInfo> queryByCondition(UserReq userreq);
 }

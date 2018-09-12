@@ -8,6 +8,8 @@ import lombok.Data;
 @Data
 @ApiModel
 public class UserInfo {
+	
+	private Long id;
     
 	@ApiModelProperty(value = "姓名")
 	private String name;

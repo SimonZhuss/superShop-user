@@ -8,6 +8,7 @@ import com.zss.user.domain.UserInfo;
 import com.zss.user.entity.BaseResEntity;
 import com.zss.user.entity.ResponseEntity;
 import com.zss.user.mapper.UserMapper;
+import com.zss.user.req.UserReq;
 import com.zss.user.service.UserService;
 
 /**
@@ -36,10 +37,10 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public BaseResEntity queryByCondition(UserInfo user) {
+	public BaseResEntity queryByCondition(UserReq userreq) {
 		ResponseEntity<UserInfo> resEntity = new ResponseEntity<UserInfo>(
 				UserRespEnum.SUCCESS);
-		resEntity.setData(userMapper.queryByCondition(user));
+		resEntity.setData(userMapper.queryByCondition(userreq));
 		return resEntity;
 	}
 }
