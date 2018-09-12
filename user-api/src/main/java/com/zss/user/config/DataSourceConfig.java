@@ -39,7 +39,4 @@ public class DataSourceConfig {
 		LOGGER.info("========SLAVE: {}=========", slaveDataSource);
 		return slaveDataSource;
 	}
-  
-	
-  
 }

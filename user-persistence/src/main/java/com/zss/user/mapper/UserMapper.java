@@ -2,6 +2,8 @@ package com.zss.user.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
+
 import com.zss.user.domain.UserInfo;
 
 public interface UserMapper {

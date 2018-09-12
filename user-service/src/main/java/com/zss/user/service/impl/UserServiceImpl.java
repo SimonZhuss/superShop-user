@@ -10,15 +10,12 @@ import com.zss.user.entity.ResponseEntity;
 import com.zss.user.mapper.UserMapper;
 import com.zss.user.service.UserService;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * 用户实现类
  * @author zhushanshan
  * 2017年11月18日 下午3:14:41
  */
 @Service
-@Slf4j
 public class UserServiceImpl implements UserService{
 
 	@Autowired
