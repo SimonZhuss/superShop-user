@@ -9,10 +9,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.zss.user.constants.UserRespEnum;
 import com.zss.user.entity.ResponseEntity;
 
-/**
- * 业务异常
- * Created by baokezheng on 2017/10/12 0012.
- */
+
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

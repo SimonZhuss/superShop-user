@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 定时任务配置类
- * @author baokezheng
+ * @author zhushanshan
  *
  */
 @Configuration
